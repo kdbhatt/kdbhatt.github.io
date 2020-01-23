@@ -15,13 +15,13 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
+
 <body>
-    
   <!-- Navigation Section -->
   <div class="navigation">
     <nav class="navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand" style="background-color: #0BADA6;" href="index.html">Latitude</a>
-      <button class="navbar-toggler  border border-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      <button class="navbar-toggler border border-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -33,9 +33,9 @@
               Plots
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="Max_Temp.html">Max Temp</a>
-              <a class="dropdown-item" href="Humidity.html">Humidity</a>
-              <a class="dropdown-item" href="Cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" href="max_temp.html">Max Temp</a>
+              <a class="dropdown-item" href="humidity.html">Humidity</a>
+              <a class="dropdown-item active" href="cloudiness.html">Cloudiness</a>
               <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
             </div>
           </li>
@@ -50,20 +50,18 @@
       </div>
     </nav>
   </div>
-  <!-- Content-->
+  <!-- Content Section -->
   <div class="container">
     <div class="row">
       <div class="col-lg-7 col-md-12">
         <!-- Left box  -->
         <div class="box">
-          <h3 class="title">Latitude vs X</h3>
+          <h3 class="title">Cloudiness</h3>
           <hr>
-          <img src="Images/landingResize-lt.png" class="vizualization rounded float-left" alt="Max Temp Graph">
-          <p>What's the weather like as we approach the equator?To know this, we collected data from OpenWeatherMap API and created python script to visualize the 
-             weather of 500+ cities across the world of varying distance from the equator.</p>
-          <p>And we built a series of scatter plots using Matplotlib in order to showcase the relationships 
-          between Latitude and Temperature (c), Humidity (%), Cloudiness (%) and Wind Speed (mph).</p>
-      </div>
+          <img src="Images/landingResize-lc.png" alt="Cloudines Graph">
+          <p>The visualization shows variety of cloudiness percentages at different latitudes. 
+             We cannot confirm the pattern between cloudiness and latitude.</p>
+        </div>
       </div>
       <div class="col-lg-5 col-md-12">
         <!-- Right Box -->
@@ -89,7 +87,7 @@
             <div class="row" style="padding-bottom: 30px;">
               <div class="col-6">
                 <a href="cloudiness.html">
-                  <img class="panel" src="Images/landingResize-lc.png" alt="Cloudiness Graph">
+                  <img class="panel active" src="Images/landingResize-lc.png" alt="Cloudiness Graph">
                 </a>
               </div>
               <div class="col-6">
@@ -109,10 +107,10 @@
   </div>
   <!-- Footer Section -->
   <footer>
-    <div class="footer">worked by Godday Abuede in 2020</div>
+    <div class="footer">Worked by Godday Abuede in 2020</div>
   </footer>
 
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <!-- Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"

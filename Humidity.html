@@ -7,6 +7,7 @@
   <title>Bootstrap Visualization Dashboard</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
@@ -15,8 +16,8 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
+
 <body>
-    
   <!-- Navigation Section -->
   <div class="navigation">
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -33,9 +34,9 @@
               Plots
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="Max_Temp.html">Max Temp</a>
-              <a class="dropdown-item" href="Humidity.html">Humidity</a>
-              <a class="dropdown-item" href="Cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" href="max_temp.html">Max Temp</a>
+              <a class="dropdown-item active" href="humiditys.html">Humidity</a>
+              <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
               <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
             </div>
           </li>
@@ -50,20 +51,20 @@
       </div>
     </nav>
   </div>
-  <!-- Content-->
+  <!-- Content Section -->
   <div class="container">
     <div class="row">
       <div class="col-lg-7 col-md-12">
         <!-- Left box  -->
         <div class="box">
-          <h3 class="title">Latitude vs X</h3>
+          <h3 class="title">Humidity</h3>
           <hr>
-          <img src="Images/landingResize-lt.png" class="vizualization rounded float-left" alt="Max Temp Graph">
-          <p>What's the weather like as we approach the equator?To know this, we collected data from OpenWeatherMap API and created python script to visualize the 
-             weather of 500+ cities across the world of varying distance from the equator.</p>
-          <p>And we built a series of scatter plots using Matplotlib in order to showcase the relationships 
-          between Latitude and Temperature (c), Humidity (%), Cloudiness (%) and Wind Speed (mph).</p>
-      </div>
+          <img src="Images/landingResize-lh.png" alt="Humidity Graph">
+          <p>Visualization shows it feels more humid beteween 40 and 80 degrees latitude where scattered plots appeared more concenterated
+          and humidity percentage from 70 and above. 
+          Therefore, it can be said that there exists a positive relationship between humidity and latitude as 
+          it tends towards South from the Equator.</p>
+        </div>
       </div>
       <div class="col-lg-5 col-md-12">
         <!-- Right Box -->
@@ -81,7 +82,7 @@
               </div>
               <div class="col-6">
                 <a href="humidity.html">
-                  <img class="panel" src="Images/landingResize-lh.png" alt="Humidity Graph">
+                  <img class="panel active" src="Images/landingResize-lh.png" alt="Humidity Graph">
                 </a>
               </div>
             </div>
@@ -112,7 +113,7 @@
     <div class="footer">worked by Godday Abuede in 2020</div>
   </footer>
 
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <!-- Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"

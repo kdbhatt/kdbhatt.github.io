@@ -15,8 +15,8 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
+
 <body>
-    
   <!-- Navigation Section -->
   <div class="navigation">
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -33,9 +33,9 @@
               Plots
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="Max_Temp.html">Max Temp</a>
-              <a class="dropdown-item" href="Humidity.html">Humidity</a>
-              <a class="dropdown-item" href="Cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item active" href="max_temp.html">Max Temp</a>
+              <a class="dropdown-item" href="humidity.html">Humidity</a>
+              <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
               <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
             </div>
           </li>
@@ -50,20 +50,21 @@
       </div>
     </nav>
   </div>
-  <!-- Content-->
+  <!-- Content Section -->
   <div class="container">
     <div class="row">
       <div class="col-lg-7 col-md-12">
         <!-- Left box  -->
-        <div class="box">
-          <h3 class="title">Latitude vs X</h3>
+        <div class="box" style="padding-bottom: 5px;">
+          <h3 class="title">Max Temp</h3>
           <hr>
-          <img src="Images/landingResize-lt.png" class="vizualization rounded float-left" alt="Max Temp Graph">
-          <p>What's the weather like as we approach the equator?To know this, we collected data from OpenWeatherMap API and created python script to visualize the 
-             weather of 500+ cities across the world of varying distance from the equator.</p>
-          <p>And we built a series of scatter plots using Matplotlib in order to showcase the relationships 
-          between Latitude and Temperature (c), Humidity (%), Cloudiness (%) and Wind Speed (mph).</p>
-      </div>
+          <img src="Images/landingResize-lt.png" alt="Max Temp Graph">
+          <p>Temperature was increasingly warmer between -50 and -20 degrees latitude. 
+             Between -20 and 0 degrees latitude, temperature was increasing at a decreasing rate. 
+             Note that Equator is known to be at zero degrees latitude between North and South, 
+             and this is where our visualization shows temperature started dropping.
+            Thus, the closer it is towards South from the Equator the cooler the temperature,hence, inverse relationship.</p>
+        </div>
       </div>
       <div class="col-lg-5 col-md-12">
         <!-- Right Box -->
@@ -76,7 +77,7 @@
             <div class="row" style="padding-bottom: 30px;">
               <div class="col-6">
                 <a href="max_temp.html">
-                  <img class="panel" src="Images/landingResize-lt.png" alt="Max Temp Image">
+                  <img class="panel active" src="Images/landingResize-lt.png" alt="Max Temp Image">
                 </a>
               </div>
               <div class="col-6">
@@ -93,7 +94,7 @@
                 </a>
               </div>
               <div class="col-6">
-                <a href="wind_speed.html">
+                <a href="Wind_Speed.html">
                   <img class="panel" src="Images/landingResize_lw.png" alt="Wind Speed Graph">
                 </a>
               </div>
@@ -109,10 +110,10 @@
   </div>
   <!-- Footer Section -->
   <footer>
-    <div class="footer">worked by Godday Abuede in 2020</div>
+    <div class="footer">work &copy; Godday Abuede in 2020</div>
   </footer>
 
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <!-- Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"

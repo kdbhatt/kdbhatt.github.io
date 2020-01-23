@@ -15,8 +15,8 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
+
 <body>
-    
   <!-- Navigation Section -->
   <div class="navigation">
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -29,13 +29,13 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
+              aria-haspopup="true" aria-expanded="false" style="color: #6D8092">
               Plots
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="Max_Temp.html">Max Temp</a>
-              <a class="dropdown-item" href="Humidity.html">Humidity</a>
-              <a class="dropdown-item" href="Cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" href="max_temp.html">Max Temp</a>
+              <a class="dropdown-item" href="humidity.html">Humidity</a>
+              <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
               <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
             </div>
           </li>
@@ -50,69 +50,58 @@
       </div>
     </nav>
   </div>
-  <!-- Content-->
+  <!-- Content Section -->
   <div class="container">
     <div class="row">
-      <div class="col-lg-7 col-md-12">
+      <div>
         <!-- Left box  -->
         <div class="box">
-          <h3 class="title">Latitude vs X</h3>
+          <h3 class="title">Comparison: Latitude vs X</h3>
           <hr>
-          <img src="Images/landingResize-lt.png" class="vizualization rounded float-left" alt="Max Temp Graph">
-          <p>What's the weather like as we approach the equator?To know this, we collected data from OpenWeatherMap API and created python script to visualize the 
-             weather of 500+ cities across the world of varying distance from the equator.</p>
-          <p>And we built a series of scatter plots using Matplotlib in order to showcase the relationships 
-          between Latitude and Temperature (c), Humidity (%), Cloudiness (%) and Wind Speed (mph).</p>
-      </div>
-      </div>
-      <div class="col-lg-5 col-md-12">
-        <!-- Right Box -->
-        <div class="box">
-          <h5 class="title">Visualizations</h5>
-          <hr>
-
-
-          <div class="container">
-            <div class="row" style="padding-bottom: 30px;">
-              <div class="col-6">
+          <p>Click any plot to get an in-depth analysis.</p>
+          <div class="container" style="padding-bottom: 40px;">
+            <div class="row">
+              <div class="col-lg-6" style="padding: 30px;">
+                <div class="title">vs. Max Temp</div>
                 <a href="max_temp.html">
                   <img class="panel" src="Images/landingResize-lt.png" alt="Max Temp Image">
                 </a>
               </div>
-              <div class="col-6">
+              <div class="col-lg-6" style="padding: 30px;">
+                <div class="title">vs. Humidity</div>
                 <a href="humidity.html">
                   <img class="panel" src="Images/landingResize-lh.png" alt="Humidity Graph">
                 </a>
               </div>
             </div>
 
-            <div class="row" style="padding-bottom: 30px;">
-              <div class="col-6">
+            <div class="row">
+              <div class="col-lg-6" style="padding: 30px;">
+                <div class="title">vs. Cloudiness</div>
                 <a href="cloudiness.html">
                   <img class="panel" src="Images/landingResize-lc.png" alt="Cloudiness Graph">
                 </a>
+
               </div>
-              <div class="col-6">
+              <div class="col-lg-6" style="padding: 30px;">
+                <div class="title">vs. Wind Speed</div>
                 <a href="wind_speed.html">
                   <img class="panel" src="Images/landingResize_lw.png" alt="Wind Speed Graph">
                 </a>
               </div>
-
-
             </div>
           </div>
-
-
         </div>
       </div>
     </div>
   </div>
+
   <!-- Footer Section -->
   <footer>
-    <div class="footer">worked by Godday Abuede in 2020</div>
+    <div class="footer">Work &copy; Godday Abuede in 2020</div>
   </footer>
 
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <!-- Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
